@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red stone shop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scaleable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+      <a href="/tutorial/index.php" class="navbar-brand"><img id="navbar_logo" src="images/logo.png"></a>
+      <ul class="nav navbar-nav" id="navbar_list">
+        <li class="dropdown" id="navbar_element">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar_text" aria-haspopup="true" aria-expanded="true">PC parts<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Graphic cads</a></li>
+            <li><a href="#">Processors</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Keyboards</a></li>
+          </ul> 
+        </li>
+        <li id="navbar_element">
+          <a href="#" id="navbar_text">Featured Products</a>
+        </li>
+        <li id="navbar_element">
+          <a href="#" id="navbar_text">Featured Products</a>
+        </li>
+        <li id="navbar_element">
+          <a href="#" id="navbar_text">Featured Products</a>
+        </li>
+        <li id="navbar_element">
+          <a href="#" id="navbar_text">Featured Products</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+<div id="background-image">
+  
+</div>
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  <div class="row">
+    <h2 class="text-center">Feactured Products</h2>
+    <!-- List of products -->
+    <div class="products_list">
+      <div class="col-md-3">
+          <h4> GTX 1060</h4> 
+          <img src="images/gtx1060msi.jpg" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$360.99 </s></p>
+          <p class="price">Our price: $250.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+      <div class="col-md-3">
+          <h4> GTX 1060</h4> 
+          <img src="images/gtx1060msi.jpg" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$360.99 </s></p>
+          <p class="price">Our price: $250.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+      <div class="col-md-3">
+          <h4> GTX 970</h4> 
+          <img src="images/gtx970.jpg" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$460.99 </s></p>
+          <p class="price">Our price: $450.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+      <div class="col-md-3">
+          <h4> GTX 970</h4> 
+          <img src="images/gtx970.jpg" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$460.99 </s></p>
+          <p class="price">Our price: $450.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+      <div class="col-md-3">
+          <h4> GTX 960</h4> 
+          <img src="images/gtx960.jpg" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$260.99 </s></p>
+          <p class="price">Our price: $250.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+      <div class="col-md-3">
+          <h4> AMD Raedeon rx580x</h4> 
+          <img src="images/rx580.png" id="images" data-toggle="modal" data-target="#details-1"/>
+          <p class="list-price text-danger">List Price: <s>$360.99 </s></p>
+          <p class="price">Our price: $250.99 </p>
+          <a href="item.php" class="btn btn-danger" role="button" aria-pressed="true">Details</a>
+      </div>
+    </div>
+      
+  </div>
+  <footer class="text-center" id="fooster">&copy; Copyright 2016-2017 Red Stone Shop</footer>
+</div>
+
+</body>
+</html>
+<!--
+<script>  
+$(document).ready(function(){  
+  load_data();  
+  function load_data(page){  
+    $.ajax({  
+      url:"pagination.php",  
+        method:"POST",  
+        data:{page:page},  
+        success:function(data){  
+          $('.products_list').html(data);  
+        }  
+    })  
+}  
+$(document).on('click', '.pagination_link', function(){  
+  var page = $(this).attr("id");  
+    load_data(page);  
+});  
+ });  
+</script>  -->
